@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html class="submit-html" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submitted</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
+    <script defer="" src="javascript.js"></script>
 </head>
-<body class="submit-body">
+<body>
     <nav>
         <div id="header-name">
             <h1>Tristan Anderson</h1>
@@ -18,8 +19,21 @@
             <a class="contact" href="/contact.html">Contact</a>
         </div>
     </nav>
-    <h1 id="submit-header" style="background-color: rgb(70, 69, 69);">Thank You! You're info has been submitted. You can now leave this page.</h1>
 
+    <main class="flex-main">
+        <div class="flex-form">
+            <h2>Contact me: </h2>
+            <form action="submit.html">
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Name">
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Email">
+                <label for="message">Comments: </label>
+                <textarea rows="20" cols="50" id="text-area" placeholder="Why are you contacting?"></textarea>
+                <button action="submit.html" type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <a class="facebook" href="https://www.facebook.com/">Facebook</a>
